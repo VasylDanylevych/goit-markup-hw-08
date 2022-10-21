@@ -7,8 +7,10 @@
 .container-header {
     display: flex;
 
+
     @media screen and (min-width:768px){
         align-items: center;
+        justify-content: space-between;
 
     }
 
@@ -30,17 +32,10 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width:768px){
-        margin-right: 96px;
-    }
 }
 
 .container-header .logo {
     padding: 16px 0;
-
-    @media screen and (min-width:768px){
-        margin-right: 87px;
-    }
 
     @media screen and (min-width:1200px){
         margin-right: 93px;
