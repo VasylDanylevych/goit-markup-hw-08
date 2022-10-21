@@ -1,0 +1,251 @@
+/* ФУТЕР */
+
+.footer-container {
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+    }
+
+}
+
+.footer {
+    background-color: var(--primary-bgc-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+address {
+    margin-top: 20px;
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer .logo {
+    color: var(--white-color);
+}
+
+.main-address {
+    color: var(--white-color);
+    text-decoration: none;
+    line-height: 1.71;
+    font-style: normal;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-address:hover,
+.main-address:focus {
+    color: var(--accent-color);
+}
+
+.footer .contacts {
+    color: var(--footer-contact-color);
+    font-weight: 400;
+    line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .contacts:hover,
+.footer .contacts:focus {
+    color: var(--accent-color);
+}
+
+.footer-wrap:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-container {
+    @media screen and (min-width:768px) and (max-width:1199px){
+        margin-left: 76px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+    }
+}
+
+
+/* приєднуйтесь */
+
+.footer-subscribe {
+    margin-left: auto;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-right: auto;
+    }
+    
+}
+
+
+.footer-social {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: 165px;
+    }
+}
+
+
+.footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 20px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
+    
+}
+
+
+
+.footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-color);
+
+}
+
+.footer-link:hover svg,
+.footer-link:focus svg {
+    fill: var(--white-color);
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* розсилка */
+
+.subscribe {
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+
+    }
+
+}
+
+.subscribe input {    
+    width: 100%;
+    height: 50px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white-color);
+
+    background-color: var(--primary-bgc-color);
+
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+.subscribe input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    padding: 10px 28px;
+
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    @media screen and (max-width:1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.subscribe-btn:hover,
+.submit-btn:focus {
+    background-color: var(--hero-btn-hover-color);
+    border: 0;
+}

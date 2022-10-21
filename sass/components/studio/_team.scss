@@ -1,0 +1,113 @@
+/* Наша команда */
+.team {
+    background-color: var(--secondary-bgc-color)
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
+
+}
+
+.team__member, .team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team__item {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 30px;
+    }
+
+}
+
+
+.team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 30px;
+
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+.team__member {
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+.team__position {
+    color: var(--secondary-tex-color);
+
+} 
+
+.team__description {
+    background-color: var(--white-color);
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* соц мережі */
+
+.social__list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: var(--accent-color);
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+    fill: var(--white-color);
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
