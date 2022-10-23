@@ -1,12 +1,33 @@
 /* кнопки */
 .filter {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
-
-    &__item:not(:last-child) {
-        margin-right: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    @media screen and (max-width:767px) {
+        width: 350px;
     }
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        
+    }
+
+    &__item {
+        @media screen and (max-width:767px) {
+        margin-bottom: 15px;        
+        }
+    }
+
+    // &__item:not(:last-child) {
+    //     margin-right: 8px;
+    // }
 
     &__btn {
         background-color: var(--secondary-bgc-color);
