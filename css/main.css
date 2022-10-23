@@ -399,10 +399,12 @@ img {
 }
 
 .menu-social {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu-social__item {
@@ -442,6 +444,9 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -458,11 +463,6 @@ img {
 
 address {
   margin-top: 20px;
-}
-@media screen and (max-width: 1199px) {
-  address {
-    margin-bottom: 60px;
-  }
 }
 
 .footer .logo {
@@ -505,9 +505,9 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .address-container {
-    margin-left: 76px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -526,6 +526,11 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-social {
     margin-left: 165px;
@@ -548,11 +553,6 @@ address {
           justify-content: center;
   text-align: center;
   margin-top: 20px;
-}
-@media screen and (max-width: 767px) {
-  .footer-list {
-    margin-bottom: 60px;
-  }
 }
 
 .footer-link {

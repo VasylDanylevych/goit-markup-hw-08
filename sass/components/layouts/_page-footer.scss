@@ -6,6 +6,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        justify-content: center;
     }
 
     @media screen and (max-width:1199px) {
@@ -23,9 +24,7 @@
 address {
     margin-top: 20px;
 
-    @media screen and (max-width:1199px) {
-        margin-bottom: 60px;
-    }
+    
 }
 
 .footer .logo {
@@ -68,8 +67,8 @@ address {
 }
 
 .address-container {
-    @media screen and (min-width:768px) and (max-width:1199px){
-        margin-left: 76px;
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width:1200px) {
@@ -91,6 +90,11 @@ address {
 
 
 .footer-social {
+    
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width:768px) and (max-width:1199px) {
         margin-left: 165px;
     }
@@ -112,9 +116,7 @@ address {
 
     margin-top: 20px;
 
-    @media screen and (max-width:767px) {
-        margin-bottom: 60px;
-    }
+    
     
 }
 
